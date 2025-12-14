@@ -1,0 +1,9 @@
+.profile-header {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.profile-image {
+    max-height: 150px;
+    max-width: 150px;
+}
