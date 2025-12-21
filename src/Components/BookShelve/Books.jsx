@@ -8,6 +8,8 @@ const Books = ({ data }) => {
     //const filter = data.filter((book) => book.id === 1 && book.genres.includes("adventure"))
 
     const filter = data
+
+   
     
     if (filter.length === 0) {
         setError(false)

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Soma from "../Components/Contador/Soma";
-import Sub from "../Components/Contador/Subtração";
+import Soma from "../../Components/Contador/Soma";
+import Sub from "../../Components/Contador/Subtração";
 
 const Contador = () => {
 

@@ -1,4 +1,4 @@
-import ProfileCard from "../Components/ProfileCardComponents/ProfileCard"
+import ProfileCard from "../../Components/ProfileCardComponents/ProfileCard"
 import "./Profile.css"
 
 const Profile = () => {
