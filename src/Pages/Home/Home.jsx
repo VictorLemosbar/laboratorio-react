@@ -18,7 +18,7 @@ function Home() {
     }
 
 
-    const Home = [
+    const homeCards = [
         {
             title: "Login",
             icon: "",
@@ -39,13 +39,14 @@ function Home() {
 
     return (
        <>
-            {Home.map((home) => {
+            {homeCards.map((home) => (
                 <Card
+                    key={home.title}
                     title={home.title}
                     icon={home.icon}
                     onclick= {home.onclick}
                 />
-            })}
+            ))}
         </>
     )
 }
