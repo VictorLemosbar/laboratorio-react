@@ -9,6 +9,7 @@ import Login from "./Pages/Login.jsx"
 import Home from "./Pages/Home.jsx"
 import Contador from "./Pages/Contador.jsx"
 import Profile from "./Pages/Profile.jsx"
+import Api from "./API/Api.jsx"
 
 const router = createBrowserRouter([
 
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
       { path: "/", element: <Login /> },
       { path: "home", element: <Home /> },
       { path: "contador", element: <Contador /> },
-      { path: "profile", element: <Profile /> }
+      { path: "profile", element: <Profile /> },
+      { path: "books", element: <Api />}
     ]
   }
 ])

@@ -3,7 +3,7 @@ const Sub = ({ onChange }) => {
 
     return (
         <div>
-            <button onClick={() => onChange(1)}>Subtrair</button>
+            <button className="btn" onClick={() => onChange(1)}>Subtrair</button>
         </div>
     )
 

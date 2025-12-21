@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import Nome from "../Components/name";
 
 function Login() {
 
@@ -14,8 +13,7 @@ function Login() {
     return (
         <div>
             <h1>Tela teste Login</h1>
-            <button onClick={login}>Entrar</button>
-            <Nome />
+            <button className="btn" onClick={login}>Entrar</button>
         </div>
 
     )

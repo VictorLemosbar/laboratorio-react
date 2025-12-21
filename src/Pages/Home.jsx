@@ -1,6 +1,6 @@
 import React from "react";
+import "./Home.css"
 import { useNavigate } from "react-router-dom";
-import Nome from "../Components/name";
 
 
 function Home() {
@@ -19,21 +19,35 @@ function Home() {
         return navigate("/profile")
     }
 
+    const BookShelfPath = () => {
+        return navigate("/books")
+    }
+
+
 
     return (
-        <div>
-            <h1>Tela Teste</h1>
+        <div className="pages-container">
+            <div className="pages">
+                <div>Home</div>
 
-            <h1>Voltar para a Pagina de login</h1>
-            <button onClick={VoltarLogin}>Voltar</button>
-            
+                <div>
+                    <h1>Voltar para a Pagina de login</h1>
+                    <button onClick={VoltarLogin}>Voltar</button>
+                </div>
+                <div>
+                    <h1>Atividades Simples</h1>
+                    <button className="btn" onClick={ContadorPath}>Go</button>
+                </div>
+                <div>
+                    <h1>Profile Card</h1>
+                    <button className="btn" onClick={ProfileCardPath}>Go</button>
+                </div>
 
-            <h1>Contador Simples com Props</h1>
-            <button onClick={ContadorPath}>Go</button>
-
-            <h1>Profile Card</h1>
-            <button onClick={ProfileCardPath}>Go</button>
-
+                <div>
+                    <h1>Books</h1>
+                    <button className="btn" onClick={BookShelfPath}>Go</button>
+                </div>
+            </div>
         </div>
     )
 }

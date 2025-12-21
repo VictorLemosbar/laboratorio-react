@@ -2,7 +2,7 @@ const Soma = ({ onChange }) => {
 
     return (
         <div>
-            <button onClick={() => onChange(1)}>Somar</button>
+            <button  className= "btn" onClick={() => onChange(1)}>Somar</button>
         </div>
     )
 }
