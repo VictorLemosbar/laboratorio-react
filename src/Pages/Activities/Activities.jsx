@@ -20,13 +20,13 @@ const Activities = () => {
 
     return (
         <>
-            {activities.map((activitiy) => {
+            {activities.map((activitiy) => (
                 <Card
                     title={activitiy.title}
                     icon={activitiy.icon}
                     onclick= {activitiy.onclick}
                 />
-            })}
+            ))}
         </>
     )
 }

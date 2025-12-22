@@ -1,13 +1,14 @@
-import Activities from "../Pages/Activities/Activities";
-import Home from "../Pages/Home/Home";
+
+import "./Card.css"
 
 const Card = ({ icon, title, onclick }) => {
   return (
     <div className="card">
-      <img src={icon} alt={title} />
-      <p className="title-card">{title}</p>
-      <button className="btn" onClick={onclick}>
-      </button>
+      <img src={icon} className="image-card" />
+      <p className="title-global">{title}</p>
+      <div className="btn-card">
+        <button className="btn-global" onClick={onclick}>Go</button>
+      </div>
     </div>
   );
 };
