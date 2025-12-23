@@ -12,13 +12,14 @@ const Form = () => {
     function handleSubmit(e) {
         e.preventDefault()
 
-    }
-
-    function validationNull() {
         if (submit.cpf == "" || submit.name == "" || submit.passworld == "") {
             setIsNull(true)
+        } else {
+            setIsNull(false)
         }
+
     }
+
     function handleData(e) {
 
         const { name, value } = e.target
@@ -56,7 +57,7 @@ const Form = () => {
                 onChange={handleData}
             ></input>
 
-            <button className="btn" onClick={validationNull}>Submit</button>
+            <button className="btn" type="submit">Submit</button>
 
             {isNull && <span className="error-mensage">Preencha todos os campos!!</span>}
 
