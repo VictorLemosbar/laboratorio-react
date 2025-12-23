@@ -1,6 +1,6 @@
-import ProfileImage from "./ProfileImage"
-import ProfileBody from "./ProfileBody"
-import ProfileCharts from "./ProfileCharts"
+import ProfileBody from "../Body/ProfileBody"
+import ProfileCharts from "../Charts/ProfileCharts"
+import ProfileImage from "../Image/ProfileImage"
 
 
 import "./ProfileCard.css"

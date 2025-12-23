@@ -1,4 +1,4 @@
-const Sub = ({ onChange }) => {
+const Minus = ({ onChange }) => {
 
 
     return (
@@ -9,4 +9,4 @@ const Sub = ({ onChange }) => {
 
 }
 
-export default Sub
+export default Minus

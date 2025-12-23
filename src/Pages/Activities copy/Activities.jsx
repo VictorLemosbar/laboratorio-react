@@ -1,47 +1,30 @@
 import Card from "../../Reusable-Components/Card"
 import { useNavigate } from "react-router-dom"
 
-//Image import
-import Bookicon from "../../assets/Book/noun-book-8041801.png"
-import Countericon from "../../assets/Counter/noun-calculator-8140592.png"
-
-
-
-
-
 const Activities = () => {
     const navigate = useNavigate()
 
 
     const activities = [
         {
-            id: 1,
             title: "Counter",
-            icon: Countericon,
+            icon: "",
             onclick: () => navigate("/books")
         },
         {
-            id: 2,
             title: "Book Shelf",
-            icon: Bookicon,
+            icon: "",
             onclick: () => navigate("/contador")
         },
-        {
-            id:3,
-            title: "Simple Form",
-            icon: "",
-            onclick: () => navigate("/form")
-        }
     ]
 
     return (
         <>
             {activities.map((activitiy) => (
                 <Card
-                    key={activitiy.id}
                     title={activitiy.title}
                     icon={activitiy.icon}
-                    onclick={activitiy.onclick}
+                    onclick= {activitiy.onclick}
                 />
             ))}
         </>

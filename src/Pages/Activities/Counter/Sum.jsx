@@ -1,4 +1,4 @@
-const Soma = ({ onChange }) => {
+const Sum = ({ onChange }) => {
 
     return (
         <div>
@@ -8,4 +8,4 @@ const Soma = ({ onChange }) => {
 }
 
 
-export default Soma;
+export default Sum;
